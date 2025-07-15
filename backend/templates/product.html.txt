@@ -1,0 +1,9 @@
+<h2>All Products</h2>
+{% for p in products %}
+  <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+    <h3>{{ p.name }} - ₹{{ p.price }}</h3>
+    <p>{{ p.description }}</p>
+    <img src="{{ p.image_url }}" width="150"><br>
+    <a href="/add_to_cart/{{ p._id }}">Add to Cart</a>
+  </div>
+{% endfor %}

@@ -1,0 +1,8 @@
+<h2>Add Product</h2>
+<form method="POST">
+  Name: <input name="name"><br>
+  Price: <input name="price" type="number"><br>
+  Description: <input name="description"><br>
+  Image URL: <input name="image_url"><br>
+  <input type="submit" value="Add Product">
+</form>
